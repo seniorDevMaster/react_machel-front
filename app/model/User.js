@@ -16,7 +16,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: User list.', retVal.message);
             } else {
-                Utils.log('Axios: User list.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -31,7 +30,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: Create User Error.', retVal.message);
             } else {
-                Utils.log('Axios: Create User.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -46,7 +44,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: Update User Error.', retVal.message);
             } else {
-                Utils.log('Axios: Update User.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -61,7 +58,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: Toggle User Status Error.', retVal.message);
             } else {
-                Utils.log('Axios: Toggle User Status.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -76,7 +72,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: Delete User Error.', retVal.message);
             } else {
-                Utils.log('Axios: Delete User.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -94,7 +89,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: User login.', retVal.message);
             } else {
-                Utils.log('Axios: User login.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -112,7 +106,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: User register.', retVal.message);
             } else {
-                Utils.log('Axios: User register.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -130,7 +123,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: forgotpassword Password.', retVal.message);
             } else {
-                Utils.log('Axios: forgotpassword Password.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -148,7 +140,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: SCP status.', retVal.message);
             } else {
-                Utils.log('Axios: SCP status.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -162,7 +153,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: SCP status.', retVal.message);
             } else {
-                Utils.log('Axios: SCP status.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -176,7 +166,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: SCP status.', retVal.message);
             } else {
-                Utils.log('Axios: SCP status.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -194,7 +183,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: SCP data.', retVal.message);
             } else {
-                Utils.log('Axios: SCP data.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -212,7 +200,6 @@ export default class User {
             if (retVal.error) {
                 Utils.error('Axios: scp update.', retVal.message);
             } else {
-                Utils.log('Axios: scp update.', retVal);
                 return retVal.data;
             }
         } catch (e) {

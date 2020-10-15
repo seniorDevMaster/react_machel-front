@@ -20,8 +20,9 @@ export default function CustomSizePerPageButton(props) {
             <DropdownMenu>
                 <DropdownItem header>Page Size</DropdownItem>
                 {
-                    map(props.options, option => (
+                    map(props.options, (option, index) => (
                         <DropdownItem
+                            key={index}
                             onClick={() => handleSizePerPageChange(option.page)}
                             active={option.page === props.currSizePerPage}
                         >

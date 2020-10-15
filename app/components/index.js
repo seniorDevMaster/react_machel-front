@@ -1,4 +1,3 @@
-// import Avatar, { AvatarAddOn } from './Avatar';
 import Card from './Card';
 import CustomInput from './CustomInput';
 import EmptyLayout from './EmptyLayout';
@@ -23,7 +22,6 @@ import {
     ThemeSelector,
     ThemeConsumer,
 } from './Theme';
-// import UncontrolledModal from './UncontrolledModal';
 
 // Export non overriden Reactstrap components
 export {
@@ -100,29 +98,25 @@ export {
     UncontrolledTooltip
 } from 'reactstrap';
 export {
-    //App,
-    // Avatar, //////////////
-    // AvatarAddOn,  ///////////////
-    Card, //////////////
-    CustomInput, ////////////////
-    EmptyLayout, /////////////////
-    ExtendedDropdown,  ///////////////
-    IconWithBadge,  /////////////
-    InputGroupAddon, ////////////////////
-    Layout, ////////////////////
-    Nav,  /////////////////
-    Navbar, ///////////////
-    withPageConfig, ///////////////
-    setupPage, ///////////////
-    OuterClick, ///////////////
-    PageConfigConsumer, ///////////////
-    PageConfigProvider, ///////////////
-    Sidebar, ///////////////
-    SidebarMenu, ////////////////
-    SidebarTrigger,  //////////////////
-    ThemeClass, /////////////////
-    ThemeConsumer, /////////////////
-    ThemeProvider, /////////////////
-    ThemeSelector, /////////////////
-    // UncontrolledModal
+    Card,
+    CustomInput,
+    EmptyLayout,
+    ExtendedDropdown,
+    IconWithBadge,
+    InputGroupAddon,
+    Layout,
+    Nav,
+    Navbar,
+    withPageConfig,
+    setupPage,
+    OuterClick,
+    PageConfigConsumer,
+    PageConfigProvider,
+    Sidebar,
+    SidebarMenu,
+    SidebarTrigger,
+    ThemeClass,
+    ThemeConsumer,
+    ThemeProvider,
+    ThemeSelector,
 };

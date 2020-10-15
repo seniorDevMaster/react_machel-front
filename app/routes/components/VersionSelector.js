@@ -67,7 +67,7 @@ export class VersionSelector extends React.Component {
                 <DropdownToggle
                     disabled={ _.isEmpty(versions) }
                     tag="a"
-                    href="javascript:;"
+                    href=""
                     className={classNames(
                         'btn-switch-version',
                         {

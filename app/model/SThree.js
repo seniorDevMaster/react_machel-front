@@ -6,13 +6,12 @@ export default class SThree {
         try {
             const retVal = await API.request(API.STHREE.STSTATUS);
             if (retVal.error) {
-                Utils.error('Axios: SCP status.', retVal.message);
+                Utils.error('Axios: SThree status.', retVal.message);
             } else {
-                Utils.log('Axios: SCP status.', retVal);
                 return retVal.data;
             }
         } catch (e) {
-            Utils.error('Axios: SCP status.', e);
+            Utils.error('Axios: SThree status.', e);
         }
         return null;
     }
@@ -20,13 +19,12 @@ export default class SThree {
         try {
             const retVal = await API.request(API.STHREE.STSTART);
             if (retVal.error) {
-                Utils.error('Axios: SCP status.', retVal.message);
+                Utils.error('Axios: SThree status.', retVal.message);
             } else {
-                Utils.log('Axios: SCP status.', retVal);
                 return retVal.data;
             }
         } catch (e) {
-            Utils.error('Axios: SCP status.', e);
+            Utils.error('Axios: SThree status.', e);
         }
         return null;
     }
@@ -34,25 +32,23 @@ export default class SThree {
         try {
             const retVal = await API.request(API.STHREE.STSTOP);
             if (retVal.error) {
-                Utils.error('Axios: SCP status.', retVal.message);
+                Utils.error('Axios: SThree status.', retVal.message);
             } else {
-                Utils.log('Axios: SCP status.', retVal);
                 return retVal.data;
             }
         } catch (e) {
-            Utils.error('Axios: SCP status.', e);
+            Utils.error('Axios: SThree status.', e);
         }
         return null;
     }
     static async list(param) {
-        // get user's list from backend
+        // get SThree's list from backend
         try {
             const retVal = await API.request({ ...API.STHREE.LIST, url: API.STHREE.LIST.url + '?page_index=' + param.page_index + '&page_size=' + param.page_size });
 
             if (retVal.error) {
                 Utils.error('Axios: SThree list.', retVal.message);
             } else {
-                Utils.log('Axios: SThree list.', retVal);
                 return retVal.data;
             }
         } catch (e) {
@@ -61,47 +57,44 @@ export default class SThree {
         return [];
     }
     static async update(param) {
-        // update user
+        // update SThree
         try {
             const retVal = await API.request(API.STHREE.UPDATE, param);
             if (retVal.error) {
-                Utils.error('Axios: Update User Error.', retVal.message);
+                Utils.error('Axios: Update SThree Error.', retVal.message);
             } else {
-                Utils.log('Axios: Update User.', retVal);
                 return retVal.data;
             }
         } catch (e) {
-            Utils.error('Axios: Update User.', e);
+            Utils.error('Axios: Update SThree.', e);
         }
         return [];
     }
     static async add(param) {
-        // update user
+        // update SThree
         try {
             const retVal = await API.request(API.STHREE.ADD, param);
             if (retVal.error) {
-                Utils.error('Axios: Update User Error.', retVal.message);
+                Utils.error('Axios: Update SThree Error.', retVal.message);
             } else {
-                Utils.log('Axios: Update User.', retVal);
                 return retVal.data;
             }
         } catch (e) {
-            Utils.error('Axios: Update User.', e);
+            Utils.error('Axios: Update SThree.', e);
         }
         return [];
     }
     static async delete(param) {
-        // update user
+        // update SThree
         try {
             const retVal = await API.request({ ...API.STHREE.DELETE, url: API.STHREE.DELETE.url + '?id=' + param.id }, param);
             if (retVal.error) {
-                Utils.error('Axios: Delete User Error.', retVal.message);
+                Utils.error('Axios: Delete SThree Error.', retVal.message);
             } else {
-                Utils.log('Axios: Delete User.', retVal);
                 return retVal.data;
             }
         } catch (e) {
-            Utils.error('Axios: Delete User.', e);
+            Utils.error('Axios: Delete SThree.', e);
         }
         return [];
     }

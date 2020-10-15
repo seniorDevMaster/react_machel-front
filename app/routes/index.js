@@ -6,7 +6,6 @@ import {
 } from 'react-router';
 
 // ----------- Pages Imports ---------------
-import NavbarOnly from './Layouts/NavbarOnly';
 import SidebarWithNavbar from './Layouts/SidebarWithNavbar';
 import ScpGroup from './Forms/ScpGroup';
 import Users from './Apps/Users';
@@ -28,7 +27,6 @@ import Success from './Pages/Success';
 import { DefaultNavbar } from './../layout/components/DefaultNavbar';
 import { DefaultSidebar } from './../layout/components/DefaultSidebar';
 
-// import { SidebarANavbar } from './../layout/components/SidebarANavbar';
 import { SidebarASidebar } from './../layout/components/SidebarASidebar';
 
 //------ Route Definitions --------
@@ -62,14 +60,6 @@ export const RoutedContent = () => {
 //------ Custom Layout Parts --------
 export const RoutedNavbars  = () => (
     <Switch>
-        {/* <Route
-            component={ SidebarANavbar }
-            path="/layouts/sidebar-a"
-        /> */}
-        <Route
-            component={ NavbarOnly.Navbar }
-            path="/layouts/navbar"
-        />
         <Route
             component={ SidebarWithNavbar.Navbar }
             path="/layouts/sidebar-with-navbar"

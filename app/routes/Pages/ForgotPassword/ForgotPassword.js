@@ -21,7 +21,6 @@ export default function ForgotPassword() {
 
     const forgotPassword = async (e) => {
         const ret = await User.forgotPassword({email: email});
-        console.log(ret)
         if (ret.error === 0) {
             alert('password forgotPassword successed')
         }
