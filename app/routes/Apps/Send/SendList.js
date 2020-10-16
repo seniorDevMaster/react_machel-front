@@ -92,7 +92,7 @@ export default function SendList() {
                                 padding: '0 5px'
                             }}
                         >
-                            Connected
+                            Service Started
                         </span>
                     ) : (
                         <span
@@ -102,7 +102,7 @@ export default function SendList() {
                                 padding: '0 5px'
                             }}
                         >
-                            Connection Lost
+                            Service Stopped
                         </span>
                     )}
                 </div>

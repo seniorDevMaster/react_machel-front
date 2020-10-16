@@ -11,6 +11,7 @@ import ScpGroup from './Forms/ScpGroup';
 import Users from './Apps/Users';
 import SThree from './Apps/SThree/SThreeList';
 import Send from './Apps/Send/SendList';
+import System from './Apps/System/SystemList';
 
 import ComingSoon from './Pages/ComingSoon';
 import Confirmation from './Pages/Confirmation';
@@ -40,6 +41,7 @@ export const RoutedContent = () => {
             <Route component={ Users } path="/apps/users/:type" />
             <Route component={ SThree } path="/apps/SThree/SThreeList" />
             <Route component={ Send } path="/apps/Send/SendList" />
+            <Route component={ System } path="/apps/System/SystemList" />
             {/* <Route component={ Modals } path="/interface/modals" /> */}
             { /*    Pages Routes    */ }
             <Route component={ ComingSoon } path="/pages/coming-soon" />

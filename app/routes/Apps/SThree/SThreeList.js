@@ -95,7 +95,7 @@ export default function SThreeList() {
                                 padding: '0 5px'
                             }}
                         >
-                            Connected
+                            Service Started
                         </span>
                     ) : (
                         <span
@@ -105,7 +105,7 @@ export default function SThreeList() {
                                 padding: '0 5px'
                             }}
                         >
-                            Connection Lost
+                            Service Stopped
                         </span>
                     )}
                 </div>
@@ -139,7 +139,7 @@ export default function SThreeList() {
                 <Row>
                     <Col lg={ 12 }>
                         <Card className="mb-3">
-                            <div className="table-responsive-xl">
+                            <div className="table-responsive">
                                 <Table className="mb-0" hover>
                                     <thead>
                                         <tr>

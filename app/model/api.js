@@ -196,4 +196,35 @@ export default class API {
             }
         },
     };
+
+    static SYSTEM = {
+        SYSSTATUS: {
+            method: 'get',
+            url: `${this.server_address}/TSystem/status`,
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        },
+        LIST: {
+            method: 'get',
+            url: `${this.server_address}/TSystem/log`,
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        },
+        SEARCH: {
+            method: 'get',
+            url: `${this.server_address}/TSystem/log`,
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        },
+        DOWNLOAD: {
+            method: 'get',
+            url: `${this.server_address}/TSystem/download`,
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        },
+    };
 }

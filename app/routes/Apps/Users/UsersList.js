@@ -48,7 +48,7 @@ export default function UsersList() {
     return(
         <Card className="mb-3">
             { /* START Table */}
-            <div className="table-responsive-xl">
+            <div className="table-responsive">
                 <Table className="mb-0" hover>
                     <thead>
                         <tr>
